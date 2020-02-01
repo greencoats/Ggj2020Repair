@@ -40,10 +40,10 @@ public class PairObject : MonoBehaviour
 
     void OnMouseEnter()
     {
-        GetComponent<SpriteGlowEffect>().enabled = true;
+       // GetComponent<SpriteGlowEffect>().OutlineWidth = 10;
     }
     void OnMouseExit()
     {
-        GetComponent<SpriteGlowEffect>().enabled = false;
+        //GetComponent<SpriteGlowEffect>().OutlineWidth = 0;
     }
 }
