@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{8d47d318-c8bc-4270-9bf2-442b11bb4da9}">
 		<property name="name">
-			<value>Haze</value>
+			<value>Haze Ambiance</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{ec21bc37-50ba-4e55-8970-301edfc4f197}</destination>
+			<destination>{739ca5e6-dd5a-4087-ab09-a6c6aa0fc369}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{936f51ff-1ed0-41b2-ba3b-7714abd01335}</destination>
@@ -156,7 +156,7 @@
 			<value>70</value>
 		</property>
 		<property name="length">
-			<value>85.75</value>
+			<value>30</value>
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{6ee2ec16-d3b9-4141-bf9b-6279698dd452}</destination>
@@ -214,7 +214,7 @@
 			<value>70</value>
 		</property>
 		<property name="length">
-			<value>90.75</value>
+			<value>30</value>
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{1ad1c73e-5d6d-4894-a8cf-bb29bdf9519e}</destination>
@@ -261,7 +261,7 @@
 			<value>70</value>
 		</property>
 		<property name="length">
-			<value>90.75</value>
+			<value>30</value>
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{22f62c0b-c13d-40ba-8bea-f5284b907537}</destination>
@@ -289,7 +289,7 @@
 	</object>
 	<object class="LoopRegion" id="{4c00976d-981a-4f50-bd67-3bb99daa9fc8}">
 		<property name="position">
-			<value>10</value>
+			<value>20</value>
 		</property>
 		<property name="length">
 			<value>70</value>
