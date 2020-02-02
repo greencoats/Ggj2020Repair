@@ -8,9 +8,23 @@ public class PairObject : MonoBehaviour
     [SerializeField] private Pair[] pairs;
     [SerializeField] private Pair thisObject;
     private PairObject pairedObject;
+    private bool highlighted;
     private float clickXMod = 10;
-    private float clickYMod = 5;
-    private float zMod = 1; // make one object slightly in front of the other
+    private float clickYMod = 0;
+    private float zMod = 0.1f; // make one object slightly in front of the other
+
+    private void Awake()
+    {
+        highlighted = false;
+    }
+
+    private void Update()
+    {
+        if (highlighted && Input.GetMouseButtonDown(0))
+        {
+            GameManager.Instance.ClickObject(this);
+        }
+    }
 
     public void Match(PairObject pair)
     {
@@ -29,21 +43,42 @@ public class PairObject : MonoBehaviour
         return thisObject;
     }
 
-    private void PairItems(PairObject pair)
+    public void PairItems(PairObject pair)
     {
         pairedObject = pair;
-        pair.transform.position = new Vector3(transform.position.x + ((pair.transform.localScale.y / 2) * clickXMod), 
-                transform.position.y - ((transform.localScale.y - pair.transform.localScale.y) * clickYMod), 
-                transform.position.z + (transform.localScale.x > pair.transform.localScale.x? zMod : -1));
+        pairedObject.SetPair(this);
+        pair.transform.position = new Vector3(transform.position.x + 0.1f,
+                transform.position.y + (GetComponent<Renderer>().material.GetFloat("_ScaleX") < pair.GetComponent<Renderer>().material.GetFloat("_ScaleX") ? zMod : -zMod),
+                transform.position.z + ((GetComponent<Renderer>().material.GetFloat("_ScaleX")  - pair.GetComponent<Renderer>().material.GetFloat("_ScaleX")) * clickYMod));
         GameManager.Instance.AddPair();
+    }
+
+    public void SetPair(PairObject pair = null)
+    {
+        if (pair)
+        {
+            pairedObject = pair;
+        } else
+        {
+            UnpairItems();
+        }
+    }
+
+    public void UnpairItems()
+    {
+        pairedObject.SetPair(null);
+        GameManager.Instance.RemovePair();
+        pairedObject = null;
     }
 
     void OnMouseEnter()
     {
         GetComponent<Renderer>().material.SetColor("tintColor", new Color(1f, 1f, 0.4901f, 1f));
+        highlighted = true;
     }
     void OnMouseExit()
     {
         GetComponent<Renderer>().material.SetColor("tintColor", Color.white);
+        highlighted = false;
     }
 }
