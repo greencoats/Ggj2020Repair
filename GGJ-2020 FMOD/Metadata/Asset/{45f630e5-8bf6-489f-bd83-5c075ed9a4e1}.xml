@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{45f630e5-8bf6-489f-bd83-5c075ed9a4e1}">
+		<property name="assetPath">
+			<value>Haze/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{11d1390b-18f9-4422-b2ea-1bab5414615f}</destination>
+		</relationship>
+	</object>
+</objects>

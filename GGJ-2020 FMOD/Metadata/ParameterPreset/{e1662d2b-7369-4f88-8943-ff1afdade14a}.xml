@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{e1662d2b-7369-4f88-8943-ff1afdade14a}">
+		<property name="name">
+			<value>Haze Low</value>
+		</property>
+		<relationship name="folder">
+			<destination>{047d3b8d-2109-4b83-809d-cbc2b4d48dae}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cd771dad-5f21-4c98-8e41-8b4ed2562588}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cd771dad-5f21-4c98-8e41-8b4ed2562588}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
