@@ -87,8 +87,10 @@ public class PairObject : MonoBehaviour
 
     void OnMouseEnter()
     {
-        GetComponent<Renderer>().material.SetColor("tintColor", new Color(1f, 1f, 0.4901f, 1f));
-        highlighted = true;
+        if (GameManager.Instance.currentObject != this) {
+            GetComponent<Renderer>().material.SetColor("tintColor", new Color(1f, 1f, 0.4901f, 1f));
+            highlighted = true;
+        }
     }
     void OnMouseExit()
     {
