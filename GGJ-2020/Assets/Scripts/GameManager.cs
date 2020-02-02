@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     //singleton variable
     public static GameManager Instance;
 
+    //Blur Variables
+    [SerializeField] private Canvas[] blurCanvas;
+
     private void Awake()
     {
         if (!Instance)
@@ -45,11 +48,15 @@ public class GameManager : MonoBehaviour
             mainZoom.GetComponent<BoxCollider>().enabled = true;
             mainZoom = null;
         }
+        StartCoroutine(ShrinkCanvas(1));
     }
 
     public void AddPair()
     {
         correctPairs++;
+        if(correctPairs == 1) {
+            StartCoroutine(ShrinkCanvas(1));
+        }
     }
 
     public void RemovePair()
@@ -90,5 +97,21 @@ public class GameManager : MonoBehaviour
     private void LockedClickMode()
     {
         Cursor.visible = false;
+    }
+
+    //Shrink blur canvas
+    private IEnumerator ShrinkCanvas(int canvasNo) {
+
+        Canvas currentCanvas = blurCanvas[canvasNo];
+        float timer = 0.0f;
+
+        while (timer < 5) {
+            timer += Time.deltaTime;
+            float t = timer / 5;
+            //smoother step algorithm
+            t = t * t * t * (t * (6f * t - 15f) + 10f);
+            currentCanvas.transform.localScale = Vector3.Lerp(new Vector3(1, 1, 1), new Vector3(0, 0, 0), t);
+            yield return null;
+        }
     }
 }
