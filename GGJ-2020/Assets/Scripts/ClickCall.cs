@@ -4,7 +4,7 @@ using UnityEngine;
 using FMOD;
 using FMODUnity;
 
-public class ClickCallScript : MonoBehaviour
+public class ClickCall : MonoBehaviour
 {
     //Create UI usage and management of events??
     [FMODUnity.EventRef]
