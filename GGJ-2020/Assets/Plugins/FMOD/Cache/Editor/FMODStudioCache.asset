@@ -1,24 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
---- !u!114 &-9160189417830447548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-8757999843917942213
+--- !u!114 &-7430723627118898095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
   SubDir: 
-  lastModified: 637162420662834931
+  lastModified: 637162409936006946
   LoadResult: 0
   FileSizes: []
-  Exists: 0
---- !u!114 &-8309209250269427729
+  Exists: 1
+--- !u!114 &-7162043990327744373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50,13 +32,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../GGJ-2020 FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637162452701065695
+  lastModified: 637162409935957068
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1106
   Exists: 1
---- !u!114 &-8233082188838202758
+--- !u!114 &-6437329463767472102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,32 +47,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiance.bank
   m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7968087045183479140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7951294645824054785
+  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
+  SubDir: 
+  lastModified: 637162409935944011
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2463589263447591636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,18 +71,18 @@ MonoBehaviour:
   Path: event:/Haze
   guid: 18d3478dbcc870429bf2442b11bb4da9
   Banks:
-  - {fileID: 5606361378321637087}
+  - {fileID: -6437329463767472102}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 7948631044190976040}
-  - {fileID: 5477259287767129757}
-  - {fileID: -4175024695137364672}
+  - {fileID: 2106739867782390865}
+  - {fileID: 837295549851460583}
+  - {fileID: 5433560415584194717}
   MinDistance: 1
   MaxDistance: 20
   Length: 160750
---- !u!114 &-7917893748613861929
+--- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,16 +91,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162419082041549
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-7724379049058260638
+  EditorBanks:
+  - {fileID: -7162043990327744373}
+  - {fileID: -6437329463767472102}
+  - {fileID: 4021534903268028780}
+  - {fileID: -7430723627118898095}
+  EditorEvents:
+  - {fileID: -2463589263447591636}
+  - {fileID: 5856413325429111676}
+  - {fileID: 5905705520793183994}
+  - {fileID: 414105276047643132}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 4021534903268028780}
+  StringsBanks:
+  - {fileID: -7162043990327744373}
+  stringsBankWriteTime: 637162409935957068
+  cacheVersion: 3
+--- !u!114 &414105276047643132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,7 +126,7 @@ MonoBehaviour:
   Path: event:/Object Click
   guid: f6d1cbb1854e4f4999932f0526f907e4
   Banks:
-  - {fileID: 3128074697726800441}
+  - {fileID: -7430723627118898095}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -157,99 +134,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-7527134022623002567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162420460489382
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-7475982330671607485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162420585211305
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-7255797455562951524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162452292659730
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-7071716531534336433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-6981014967747185418
-=======
---- !u!114 &11400000
->>>>>>> a5e3b6cb2221a59909ee2d2828e2527f11189757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-6836885819639409383
+--- !u!114 &837295549851460583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,8 +150,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 0
---- !u!114 &-6562748424156371830
+  Exists: 1
+--- !u!114 &2106739867782390865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Haze/Haze High
+  m_EditorClassIdentifier: 
+  Name: Haze High
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &4021534903268028780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,150 +182,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
   SubDir: 
-  lastModified: 637162420662406293
+  lastModified: 637162409935957068
   LoadResult: 0
   FileSizes: []
-  Exists: 0
---- !u!114 &-6508105953320133769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-6494853278604003191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-6174752790022783192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-5808254657935615508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162416343177812
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-5757004526811833853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162419234217714
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-5341164316294567462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162424389672774
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-5328437891654981182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-4678968051947921536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-4175024695137364672
+  Exists: 1
+--- !u!114 &5433560415584194717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,7 +203,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &-3845267108140275305
+--- !u!114 &5856413325429111676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -455,483 +218,15 @@ MonoBehaviour:
   Path: event:/Window Ambiance
   guid: 51bdcac28b64ab4cb7b71f13b90017db
   Banks:
-  - {fileID: 5606361378321637087}
+  - {fileID: -6437329463767472102}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 3
-  Length: 99000
---- !u!114 &-3845000009147996286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162416343247707
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-3753801426781769288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162419081582771
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-3603536376538269416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162383074633057
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-3585893852239770499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-3558398154530353094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-3482914073420980922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-2681126560644448618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162420585241226
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-2085375185898981598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1809680852653887953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162399228942807
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1735100882730172168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162420460529321
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1647003813866906754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162451378412865
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1624931186559006484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1603751999140625594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162452293088789
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1226246519067546242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162383068030022
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1128208755376320546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-657507213862390404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-424987597123528000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-142207006166239011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-35033197498414857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162420585670074
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -8309209250269427729}
-  - {fileID: 5606361378321637087}
-  - {fileID: 92283741413229478}
-  - {fileID: 3128074697726800441}
-  EditorEvents:
-  - {fileID: -7951294645824054785}
-  - {fileID: -3845267108140275305}
-  - {fileID: 873480252371504521}
-  - {fileID: -7724379049058260638}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 92283741413229478}
-  StringsBanks:
-  - {fileID: -8309209250269427729}
-  stringsBankWriteTime: 637162452701065695
-  cacheVersion: 3
---- !u!114 &34779428930148594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &92283741413229478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162452701045741
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &271330204540112894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162399229341744
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &496418287416597728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162424389623101
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &548372038455409361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162416343671634
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &600464076095899588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &873480252371504521
+  MaxDistance: 20
+  Length: 260000
+--- !u!114 &5905705520793183994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -946,7 +241,7 @@ MonoBehaviour:
   Path: event:/Object Unclick
   guid: 179363ee946b7848a70f7c6472555962
   Banks:
-  - {fileID: 3128074697726800441}
+  - {fileID: -7430723627118898095}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -954,572 +249,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &1081478245274203972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &1136732084688673585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162420662376162
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &1630813253611672185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162424390081687
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &1665074855304300238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &1864881932515899256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &1919232785697872371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2249319949851333607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2296163457034771453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2990012053423499331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &3128074697726800441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162452701464623
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3423320541830735397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &4248154121900402471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162419234656295
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &4277556001919582633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162399228903250
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &4495902957209348181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162452292619852
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &4885532836300114338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162451959156234
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &5201721948619472456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &5477259287767129757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &5606361378321637087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162452700995866
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &5761997692697116367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &5787331878190324768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162420460948158
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &5859187126117925754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &5906738750872508928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162451959116322
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &6404591029300849198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162419081632637
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &6746826729837716580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &6856146275801223285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162451959565002
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &7393857595109272540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162451377944033
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &7900893175565138528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &7948631044190976040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &8105981590321198304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162383067990131
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &8213707867244760703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze High
-  m_EditorClassIdentifier: 
-  Name: Haze High
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &8857867611505569755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162451377983935
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &8978569882717274274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162419234247614
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-=======
-  EditorBanks: []
-  EditorEvents: []
-  EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
-  cacheVersion: 3
->>>>>>> a5e3b6cb2221a59909ee2d2828e2527f11189757
