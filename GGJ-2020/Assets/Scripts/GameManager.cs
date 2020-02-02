@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     //pair tracking
     private int correctPairs;
+    private PairObject currentObject;
+    [SerializeField] private Transform objectHold;
 
     //player variables
     private GameObject player;
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
         correctPairs = 0;
         inZoom = false;
         mainCam = Camera.main;
+        currentObject = null;
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -75,6 +78,7 @@ public class GameManager : MonoBehaviour
 
     public void MainCamOn()
     {
+        MoveSpriteToPlayer();
         currentZoomCam.SetActive(false);
         currentZoomCam = null;
         player.SetActive(true);
@@ -114,4 +118,27 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
     }
+
+    public void ClickObject(PairObject newObject)
+    {
+        if (!currentObject)
+        {
+            currentObject = newObject;
+            print(currentObject);
+            currentObject.transform.SetParent(currentZoomCam.GetComponentInChildren<SpritePos>().transform);
+            currentObject.transform.localPosition = new Vector3(0, 0, 0);
+        } else
+        {
+            currentObject.transform.parent = null;
+            newObject.PairItems(currentObject);
+            currentObject = null;
+        }
+    }
+
+    private void MoveSpriteToPlayer()
+    {
+        currentObject.transform.SetParent(objectHold);
+        currentObject.transform.localPosition = new Vector3(0, 0, 0);
+    }
+
 }
