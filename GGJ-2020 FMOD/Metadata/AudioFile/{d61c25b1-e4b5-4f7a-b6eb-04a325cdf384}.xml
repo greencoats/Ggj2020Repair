@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{d61c25b1-e4b5-4f7a-b6eb-04a325cdf384}">
 		<property name="assetPath">
-			<value>GGJ-2020 Composition 2 PASS 1.wav</value>
+			<value>Music/GGJ-2020 Composition 2 PASS 1.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
