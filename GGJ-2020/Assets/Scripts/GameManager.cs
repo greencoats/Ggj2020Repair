@@ -154,7 +154,7 @@ public class GameManager : MonoBehaviour
         {
             newObject.UnpairItems();
             currentObject.transform.parent = null;
-            newObject.PairItems(currentObject);
+            newObject.Match(currentObject);
             currentObject = null;
         }
     }

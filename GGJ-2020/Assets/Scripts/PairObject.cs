@@ -12,10 +12,12 @@ public class PairObject : MonoBehaviour
     private float clickXMod = 10;
     private float clickYMod = 0;
     private float zMod = 0.1f; // make one object slightly in front of the other
+    private bool pairMatch;
 
     private void Awake()
     {
         highlighted = false;
+        pairMatch = false;
     }
 
     private void Update()
@@ -29,21 +31,22 @@ public class PairObject : MonoBehaviour
     public void Match(PairObject pair)
     {
 
-        bool gotPair = false;
+        pairMatch = false;
 
         for (int i = 0; i < pairs.Length; i++)
         {
+            print(pairs[i]);
             if (pairs[i] == pair.GetPairObject())
             {
                 i = pairs.Length;
-                gotPair = true;
+                pairMatch = true;
                 GameManager.Instance.AddPair();
             }
         }
 
-        if (!gotPair)
+        if (!pairMatch)
         {
-            
+            StartCoroutine(UnpopPair());
         }
 
 
@@ -60,7 +63,6 @@ public class PairObject : MonoBehaviour
         pairedObject = pair;
         pairedObject.SetPair(this);
         pair.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        GameManager.Instance.AddPair();
     }
 
     public void SetPair(PairObject pair = null)
@@ -71,7 +73,10 @@ public class PairObject : MonoBehaviour
         } else
         {
             pairedObject = null;
-            GameManager.Instance.RemovePair();
+            if (pairMatch)
+            {
+                GameManager.Instance.RemovePair();
+            }
         }
     }
 
@@ -102,5 +107,6 @@ public class PairObject : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(60);
 
+        UnpairItems();
     }
 }
