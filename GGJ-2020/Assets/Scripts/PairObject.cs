@@ -28,14 +28,26 @@ public class PairObject : MonoBehaviour
 
     public void Match(PairObject pair)
     {
+
+        bool gotPair = false;
+
         for (int i = 0; i < pairs.Length; i++)
         {
             if (pairs[i] == pair.GetPairObject())
             {
-                PairItems(pair);
                 i = pairs.Length;
+                gotPair = true;
+                GameManager.Instance.AddPair();
             }
         }
+
+        if (!gotPair)
+        {
+            
+        }
+
+
+        PairItems(pair);
     }
 
     public Pair GetPairObject()
@@ -47,9 +59,7 @@ public class PairObject : MonoBehaviour
     {
         pairedObject = pair;
         pairedObject.SetPair(this);
-        pair.transform.position = new Vector3(transform.position.x + 0.1f,
-                transform.position.y + (GetComponent<Renderer>().material.GetFloat("_ScaleX") < pair.GetComponent<Renderer>().material.GetFloat("_ScaleX") ? zMod : -zMod),
-                transform.position.z + ((GetComponent<Renderer>().material.GetFloat("_ScaleX")  - pair.GetComponent<Renderer>().material.GetFloat("_ScaleX")) * clickYMod));
+        pair.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         GameManager.Instance.AddPair();
     }
 
@@ -60,15 +70,19 @@ public class PairObject : MonoBehaviour
             pairedObject = pair;
         } else
         {
-            UnpairItems();
+            pairedObject = null;
+            GameManager.Instance.RemovePair();
         }
     }
 
     public void UnpairItems()
     {
-        pairedObject.SetPair(null);
-        GameManager.Instance.RemovePair();
-        pairedObject = null;
+        if (pairedObject)
+        {
+            pairedObject.SetPair(null);
+            pairedObject = null;
+            transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
+        }
     }
 
     void OnMouseEnter()
@@ -80,5 +94,11 @@ public class PairObject : MonoBehaviour
     {
         GetComponent<Renderer>().material.SetColor("tintColor", Color.white);
         highlighted = false;
+    }
+
+    IEnumerator UnpopPair()
+    {
+        yield return new WaitForSecondsRealtime(60);
+
     }
 }

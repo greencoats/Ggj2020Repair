@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private GameObject currentZoomCam;
 
     //pair tracking
-    private int correctPairs;
+    [SerializeField] private int correctPairs;
     private PairObject currentObject;
     [SerializeField] private Transform objectHold;
 
@@ -101,11 +101,12 @@ public class GameManager : MonoBehaviour
         if (!currentObject)
         {
             currentObject = newObject;
-            print(currentObject);
+            currentObject.UnpairItems();
             currentObject.transform.SetParent(currentZoomCam.GetComponentInChildren<SpritePos>().transform);
             currentObject.transform.localPosition = new Vector3(0, 0, 0);
         } else
         {
+            newObject.UnpairItems();
             currentObject.transform.parent = null;
             newObject.PairItems(currentObject);
             currentObject = null;
@@ -114,7 +115,10 @@ public class GameManager : MonoBehaviour
 
     private void MoveSpriteToPlayer()
     {
-        currentObject.transform.SetParent(objectHold);
-        currentObject.transform.localPosition = new Vector3(0, 0, 0);
+        if (currentObject)
+        {
+            currentObject.transform.SetParent(objectHold);
+            currentObject.transform.localPosition = new Vector3(0, 0, 0);
+        }
     }
 }
