@@ -6,7 +6,7 @@ public class HighlightArea : MonoBehaviour
 {
 
     [SerializeField] private GameObject[] highlightObjects;
-    [SerializeField] private GameObject camera;
+    [SerializeField] private GameObject cam;
     private bool highlighted;
 
     private void Awake()
@@ -19,8 +19,8 @@ public class HighlightArea : MonoBehaviour
         if (highlighted && Input.GetKeyDown(KeyCode.E))
         {
             GetComponent<BoxCollider>().enabled = false;
-            camera.SetActive(true);
-            GameManager.Instance.MainCamOff(gameObject, camera);
+            cam.SetActive(true);
+            GameManager.Instance.MainCamOff(gameObject, cam);
         }
     }
 
