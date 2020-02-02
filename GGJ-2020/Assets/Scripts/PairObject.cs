@@ -86,7 +86,6 @@ public class PairObject : MonoBehaviour
         {
             pairedObject.SetPair(null);
             pairedObject = null;
-            transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
         }
     }
 
