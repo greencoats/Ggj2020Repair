@@ -1,5 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9198110700121454458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiance.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
+  SubDir: 
+  lastModified: 637162518520902231
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-8916510403683424116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Haze/Haze Low
+  m_EditorClassIdentifier: 
+  Name: Haze Low
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-7430723627118898095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,29 +67,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../GGJ-2020 FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637162443721248373
+  lastModified: 637162422345550422
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1106
-  Exists: 1
---- !u!114 &-6464738436095543936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sound Effects.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
-  SubDir: 
-  lastModified: 637162443721288531
-  LoadResult: 0
-  FileSizes: []
   Exists: 1
 --- !u!114 &-6437329463767472102
 MonoBehaviour:
@@ -89,34 +106,17 @@ MonoBehaviour:
   Path: event:/Haze
   guid: 18d3478dbcc870429bf2442b11bb4da9
   Banks:
-  - {fileID: 7763403309419391150}
+  - {fileID: -9198110700121454458}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 1052105651233021018}
-  - {fileID: 8466994051424660201}
-  - {fileID: -1208424827760968052}
+  - {fileID: 1072267287238071023}
+  - {fileID: 458503087289730723}
+  - {fileID: -8916510403683424116}
   MinDistance: 1
   MaxDistance: 20
   Length: 160750
---- !u!114 &-1208424827760968052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Low
-  m_EditorClassIdentifier: 
-  Name: Haze Low
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,9 +131,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -7162043990327744373}
-  - {fileID: 7763403309419391150}
-  - {fileID: 78375350994423546}
-  - {fileID: -6464738436095543936}
+  - {fileID: -9198110700121454458}
+  - {fileID: 2009662777368587864}
+  - {fileID: 1882257421547018472}
   EditorEvents:
   - {fileID: -2463589263447591636}
   - {fileID: 5856413325429111676}
@@ -141,29 +141,11 @@ MonoBehaviour:
   - {fileID: 414105276047643132}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 78375350994423546}
+  - {fileID: 2009662777368587864}
   StringsBanks:
   - {fileID: -7162043990327744373}
-  stringsBankWriteTime: 637162443721248373
+  stringsBankWriteTime: 637162422345550422
   cacheVersion: 3
---- !u!114 &78375350994423546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162443721248373
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
 --- !u!114 &414105276047643132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +161,7 @@ MonoBehaviour:
   Path: event:/Object Click
   guid: f6d1cbb1854e4f4999932f0526f907e4
   Banks:
-  - {fileID: -6464738436095543936}
+  - {fileID: 1882257421547018472}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -187,6 +169,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &458503087289730723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Haze/Haze Mid
+  m_EditorClassIdentifier: 
+  Name: Haze Mid
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &837295549851460583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +203,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &1052105651233021018
+--- !u!114 &1072267287238071023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,6 +219,42 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 1
+--- !u!114 &1882257421547018472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ-2020 FMOD/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637162422345650209
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2009662777368587864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ-2020 FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162422345550422
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &2106739867782390865
 MonoBehaviour:
@@ -288,7 +323,7 @@ MonoBehaviour:
   Path: event:/Window Ambiance
   guid: 51bdcac28b64ab4cb7b71f13b90017db
   Banks:
-  - {fileID: 7763403309419391150}
+  - {fileID: -9198110700121454458}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -311,7 +346,7 @@ MonoBehaviour:
   Path: event:/Object Unclick
   guid: 179363ee946b7848a70f7c6472555962
   Banks:
-  - {fileID: -6464738436095543936}
+  - {fileID: 1882257421547018472}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -319,38 +354,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &7763403309419391150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../GGJ-2020 FMOD/Build/Desktop/Ambiance.bank
-  SubDir: 
-  lastModified: 637162529091073537
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &8466994051424660201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Haze/Haze Mid
-  m_EditorClassIdentifier: 
-  Name: Haze Mid
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1

@@ -60,6 +60,8 @@ public class PairObject : MonoBehaviour
 
     public void PairItems(PairObject pair)
     {
+        //Play audio---------------------
+        //gameObject.GetComponent<ClickCallScript>().ClickSound();
         pairedObject = pair;
         pairedObject.SetPair(this);
         pair.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -84,8 +86,11 @@ public class PairObject : MonoBehaviour
     {
         if (pairedObject)
         {
+            //Play audio-------------------
+            //gameObject.GetComponent<ClickCallScript>().PopSound();
             pairedObject.SetPair(null);
             pairedObject = null;
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
     }
 
