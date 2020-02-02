@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{521dc391-74bb-4258-a3c8-3e0670520449}">
+		<property name="name">
+			<value>Haze Mid</value>
+		</property>
+		<relationship name="folder">
+			<destination>{047d3b8d-2109-4b83-809d-cbc2b4d48dae}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{672cb6ab-c730-4355-9591-b56b96a1cb1a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{672cb6ab-c730-4355-9591-b56b96a1cb1a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
