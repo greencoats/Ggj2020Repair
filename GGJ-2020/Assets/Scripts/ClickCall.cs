@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD;
+using FMODUnity;
 
 public class ClickCallScript : MonoBehaviour
 {
@@ -10,8 +12,7 @@ public class ClickCallScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         
     }
 }

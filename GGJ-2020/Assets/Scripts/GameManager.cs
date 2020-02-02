@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
         mainCam = Camera.main;
         currentObject = null;
         player = GameObject.FindGameObjectWithTag("Player");
+        //StartCoroutine(ShrinkCanvas(1)); -- for testing
     }
 
     // Update is called once per frame
@@ -51,15 +52,29 @@ public class GameManager : MonoBehaviour
             mainZoom.GetComponent<BoxCollider>().enabled = true;
             mainZoom = null;
         }
-        StartCoroutine(ShrinkCanvas(1));
+        
     }
 
     public void AddPair()
     {
         correctPairs++;
         if(correctPairs == 1) {
+            StartCoroutine(ShrinkCanvas(0));
+        }else if (correctPairs == 4) {
             StartCoroutine(ShrinkCanvas(1));
-        }
+        } else if (correctPairs == 5) {
+            StartCoroutine(ShrinkCanvas(2));
+        } else if (correctPairs == 8) {
+            StartCoroutine(ShrinkCanvas(3));
+        } else if (correctPairs == 9) {
+            StartCoroutine(ShrinkCanvas(4));
+        } else if (correctPairs == 10) {
+            StartCoroutine(ShrinkCanvas(5));
+        } else if (correctPairs == 16) {
+            StartCoroutine(ShrinkCanvas(6));
+        } else if (correctPairs == 21) {
+            StartCoroutine(ShrinkCanvas(7));
+        } 
     }
 
     public void RemovePair()
@@ -115,8 +130,16 @@ public class GameManager : MonoBehaviour
             //smoother step algorithm
             t = t * t * t * (t * (6f * t - 15f) + 10f);
             currentCanvas.transform.localScale = Vector3.Lerp(new Vector3(1, 1, 1), new Vector3(0, 0, 0), t);
+            if(currentCanvas.transform.localScale == new Vector3(0, 0, 0)) {
+                
+                
+            }
             yield return null;
         }
+        currentCanvas.enabled = false;
+        
+
+
     }
 
     public void ClickObject(PairObject newObject)
