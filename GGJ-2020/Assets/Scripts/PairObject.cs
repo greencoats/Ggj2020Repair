@@ -46,7 +46,7 @@ public class PairObject : MonoBehaviour
     public void PairItems(PairObject pair)
     {
         pairedObject = pair;
-        pair.transform.position = new Vector3(transform.position.x + 2, 
+        pair.transform.position = new Vector3(transform.position.x + 0.2f, 
                 transform.position.y - ((transform.localScale.y - pair.transform.localScale.y) * clickYMod), 
                 transform.position.z + (transform.localScale.x > pair.transform.localScale.x? zMod : -1));
         GameManager.Instance.AddPair();
