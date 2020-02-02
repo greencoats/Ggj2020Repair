@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{94952a45-3e31-4c78-b137-dfdba17e47ac}">
+		<property name="assetPath">
+			<value>Footsteps/Footsteps RAW 9 - Trimmed.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{11d1390b-18f9-4422-b2ea-1bab5414615f}</destination>
+		</relationship>
+	</object>
+</objects>
