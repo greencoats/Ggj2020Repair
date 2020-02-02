@@ -5,11 +5,17 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    //Pairs values
+    //Zooming variables
+    private bool inZoom;
+    private Camera mainCam;
+    private GameObject mainZoom;
+    private GameObject currentZoomCam;
+
+    //pair tracking
     private int correctPairs;
 
-    [SerializeField] PairObject[] pairs;
-
+    //player variables
+    private GameObject player;
 
     //singleton variable
     public static GameManager Instance;
@@ -25,20 +31,19 @@ public class GameManager : MonoBehaviour
         }
 
         correctPairs = 0;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        inZoom = false;
+        mainCam = Camera.main;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (inZoom && Input.GetKeyDown(KeyCode.E))
         {
-            pairs[0].Match(pairs[1]);
+            MainCamOn();
+            mainZoom.GetComponent<BoxCollider>().enabled = true;
+            mainZoom = null;
         }
     }
 
@@ -50,5 +55,40 @@ public class GameManager : MonoBehaviour
     public void RemovePair()
     {
         correctPairs--;
+    }
+
+    public void MainCamOff(GameObject zoomBox, GameObject currentCam)
+    {
+        player.SetActive(false);
+        mainZoom = zoomBox;
+        currentZoomCam = currentCam;
+        FreeClickMode();
+        StartCoroutine(SwitchZoom());
+    }
+
+    public void MainCamOn()
+    {
+        currentZoomCam.SetActive(false);
+        currentZoomCam = null;
+        player.SetActive(true);
+        LockedClickMode();
+        StartCoroutine(SwitchZoom());
+    }
+
+    IEnumerator SwitchZoom()
+    {
+        yield return new WaitForSeconds(0.1f);
+        inZoom = !inZoom;
+    }
+
+    private void FreeClickMode()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    private void LockedClickMode()
+    {
+        Cursor.visible = false;
     }
 }

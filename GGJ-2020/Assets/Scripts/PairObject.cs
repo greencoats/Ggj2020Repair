@@ -40,10 +40,10 @@ public class PairObject : MonoBehaviour
 
     void OnMouseEnter()
     {
-       // GetComponent<SpriteGlowEffect>().OutlineWidth = 10;
+        GetComponent<Renderer>().material.SetColor("tintColor", new Color(1f, 1f, 0.4901f, 1f));
     }
     void OnMouseExit()
     {
-        //GetComponent<SpriteGlowEffect>().OutlineWidth = 0;
+        GetComponent<Renderer>().material.SetColor("tintColor", Color.white);
     }
 }
